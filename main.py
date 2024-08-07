@@ -1,16 +1,5 @@
-import pygame as pg
+from code.Game import Game
 
-print('Setup Start')
-pg.init()
-screen = pg.display.set_mode((800, 600))
-print('Setup End')
+game = Game()
 
-
-print('Game Loop Start')
-while True:
-    # check for all events
-
-    for event in pg.event.get():
-        if event.type == pg.QUIT:
-            pg.quit()
-            exit()
+game.run()
